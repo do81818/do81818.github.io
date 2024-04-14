@@ -9,7 +9,7 @@
         let testData = JSON.parse(JSON.stringify(TestFile));
         testData.forEach((data) => {
             const listItem = document.createElement("li");
-            listItem.textContent = `${거래처명}`;
+            listItem.textContent = `${data.거래처명}`;
             userList.appendChild(listItem);
         });
     </script>
