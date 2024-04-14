@@ -7,7 +7,11 @@
     <script src="orders.json" type="text/javascript"></script>
     <script>
         let testData = JSON.parse(JSON.stringify(TestFile));
-        console.log(testData);
+        users.forEach((data) => {
+            const listItem = document.createElement("li");
+            listItem.textContent = `${거래처명}`;
+            userList.appendChild(listItem);
+        });
     </script>
   </head>
   <body>
